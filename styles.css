@@ -1,18 +1,33 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0d0d0d;
+    color: #c7c7c7;
     margin: 0;
     padding: 0;
-    background-color: #f0f2f5;
-    color: #333;
 }
 
+/* Header Styles */
 header {
-    background-color: #4CAF50;
-    color: white;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #00d4ff;
     text-align: center;
-    padding: 2em 0;
+    padding: 3em 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #00d4ff;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Main Content Styles */
 main {
     padding: 20px;
 }
@@ -21,33 +36,59 @@ section {
     margin-bottom: 40px;
 }
 
-h1, h2, h3 {
-    color: #333;
-}
-
-.experience-item, .project-item {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+h2 {
+    font-size: 2.2em;
+    color: #00d4ff;
+    border-bottom: 2px solid #00d4ff;
+    display: inline-block;
+    padding-bottom: 5px;
     margin-bottom: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+/* Experience and Projects */
+.experience-item, .project-item {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s;
 }
 
-a {
-    color: #4CAF50;
+.experience-item:hover, .project-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0d0d0d;
+    color: #c7c7c7;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer a {
+    color: #00d4ff;
     text-decoration: none;
 }
 
+footer a:hover {
+    text-shadow: 0 0 10px #00d4ff;
+}
+
+/* Neon Animation for Links */
 a:hover {
-    text-decoration: underline;
+    animation: neon-glow 1.5s infinite alternate;
+}
+
+@keyframes neon-glow {
+    from {
+        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 30px #00d4ff;
+    }
+    to {
+        text-shadow: 0 0 20px #00d4ff, 0 0 30px #00d4ff, 0 0 40px #00d4ff;
+    }
 }
