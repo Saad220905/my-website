@@ -1,5 +1,0 @@
-Installing the browser sync:
-    npm install -g browser-sync
-
-Getting it to work:
-    browser-sync start --server --files "**/*"
