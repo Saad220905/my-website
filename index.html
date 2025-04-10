@@ -4,106 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saad Kashif - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
     <h1>👋 Hi there, I'm Saad Kashif!</h1>
-    <p>🎓 Aspiring Software Engineer and Computer Science Student at Hunter College, CUNY</p>
+    <p>🎓 Computer Science Student at Hunter College, CUNY | Mathematics & Economics Minor</p>
+    <p>💻 Full-Stack Developer | AI Researcher | Mobile App Developer</p>
     <p>🔍 Actively Seeking Internship Opportunities for Summer 2025</p>
     <p>📍 Based in New York, NY</p>
 </header>
+
+<nav class="tab-bar">
+    <div class="tab-container">
+        <button class="tab-button active" data-tab="portfolio">Portfolio</button>
+        <button class="tab-button" data-tab="bio">Bio</button>
+    </div>
+</nav>
+
 <main>
-    <section id="about">
-        <h2>🏫 About Me</h2>
-        <p>I'm a passionate computer science student with a focus on software development, AI research, and mobile/web application development. I enjoy solving problems, learning new technologies, and building innovative solutions to real-world challenges. My background in AI research, combined with hands-on experience in app development, has equipped me with the skills to work on diverse projects and deliver impactful results.</p>
-    </section>
+    <div class="tab-content active" id="portfolio">
+        <section id="about">
+            <h2>🏫 About Me</h2>
+            <p>I'm a passionate computer science student with expertise in full-stack development, AI research, and mobile application development. With experience in optimizing system performance, implementing scalable solutions, and developing AI-powered educational platforms, I bring a unique blend of technical skills and problem-solving abilities. My work at CUNY Research Foundation has given me hands-on experience in building robust backend systems, implementing CI/CD pipelines, and developing innovative educational technology solutions.</p>
+        </section>
 
-    <section id="education">
-        <h2>🎓 Education</h2>
-        <div class="experience-item">
-            <h3>Hunter College, City University of New York</h3>
-            <p><em>Bachelor of Arts in Computer Science, Minor in Mathematics & Economics | Expected May 2026</em></p>
-            <ul>
-                <li><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Software Engineering, Database Systems, Computer Networks, Operating Systems, Mobile Development, Calculus III, Linear Algebra</li>
-                <li><strong>Awards:</strong> 1st Place - 2023 Congressional App Challenge (NY - 13) - Developed a model application designed to make use of AI in the classroom and retain student engagement</li>
-            </ul>
-        </div>
-    </section>
+        <section id="education">
+            <h2>🎓 Education</h2>
+            <div class="experience-item">
+                <h3>Hunter College, City University of New York</h3>
+                <p><em>Bachelor of Arts in Computer Science, Minor in Mathematics & Economics | Expected May 2026</em></p>
+                <ul>
+                    <li><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Software Engineering, Database Systems, Computer Networks, Operating Systems, Mobile Development, Calculus III, Linear Algebra</li>
+                    <li><strong>Awards:</strong> 1st Place - 2023 Congressional App Challenge (NY - 13) - Developed an AI-powered educational platform that significantly improved student engagement and learning outcomes</li>
+                </ul>
+            </div>
+        </section>
 
-    <section id="skills">
-        <h2>🔧 Skills & Technologies</h2>
-        <div class="experience-item">
-            <ul>
-                <li><strong>Languages:</strong> Python, Java, C/C++, Swift, Kotlin, JavaScript/TypeScript, SQL, Scala, HTML/CSS</li>
-                <li><strong>Frameworks/Libraries:</strong> React, React Native, Next.js, SwiftUI, Node.js, Pandas, NumPy, Matplotlib</li>
-                <li><strong>Tools:</strong> Git, Docker, Kubernetes, AWS (EC2, S3, RDS), Firebase, PostgreSQL, MySQL, MongoDB, Redis, Jenkins</li>
-                <li><strong>Concepts:</strong> REST APIs, Distributed Systems, CI/CD, Agile Development</li>
-            </ul>
-        </div>
-    </section>
+        <section id="skills">
+            <h2>🔧 Skills & Technologies</h2>
+            <div class="experience-item">
+                <ul>
+                    <li><strong>Languages:</strong> Python, Java, C/C++, Swift, Kotlin, JavaScript/TypeScript, SQL, Scala, HTML/CSS</li>
+                    <li><strong>Frameworks/Libraries:</strong> React, React Native, Next.js, SwiftUI, Node.js, Pandas, NumPy, Matplotlib, TensorFlow</li>
+                    <li><strong>Tools & Platforms:</strong> Git, Docker, Kubernetes, AWS (EC2, S3, RDS, Elastic Beanstalk), Firebase, PostgreSQL, MySQL, MongoDB, Redis, Jenkins</li>
+                    <li><strong>Concepts & Methodologies:</strong> REST APIs, Distributed Systems, CI/CD, Agile Development, System Optimization, Database Design</li>
+                </ul>
+            </div>
+        </section>
 
-    <section id="experience">
-        <h2>💼 Professional Experience</h2>
-        <div class="experience-item">
-            <h3>Mobile Application Developer</h3>
-            <p><em>CUNY Research Foundation | Sep 2023 - May 2024</em></p>
-            <ul>
-                <li>Developed backend services for an educational mobile app, optimizing performance for scalability, reducing API latency by 40% through Redis caching and connection pooling</li>
-                <li>Improved system reliability by utilizing AWS Elastic Beanstalk auto-scaling, reducing downtime by 20%</li>
-                <li>Designed and developed PostgreSQL database schema with optimized indexes that improved query performance by 35%</li>
-                <li>Established CI/CD pipeline using Jenkins and Docker containers, reducing deployment time from 20 to 6 minutes</li>
-            </ul>
-        </div>
-        <div class="experience-item">
-            <h3>AI in Education Researcher (Internship)</h3>
-            <p><em>CUNY Research Foundation x NYC Department of Education | Jun 2023 - Aug 2023</em></p>
-            <ul>
-                <li>Assisted in the development of an AI-powered student educational platform using Python and TensorFlow, aimed to contribute to a 15% retention of student engagement</li>
-                <li>Collaborated with a team to integrate a real-time analytics dashboard using React and D3.js, enabling teachers to monitor student progress more effectively</li>
-                <li>Prepared and presented project updates to team leads and managers, ensuring alignment with project goals and timelines</li>
-            </ul>
-        </div>
-        <div class="experience-item">
-            <h3>CS Instructional Tutor</h3>
-            <p><em>James Madison High School | Dec 2021 - May 2022</em></p>
-            <ul>
-                <li>Mentored 120+ students in programming classes, contributing to an increase in AP Computer Science exam pass rates by 20%</li>
-                <li>Developed automated grading scripts in Python that reduced teacher workload by 15 hours/week</li>
-            </ul>
-        </div>
-    </section>
+        <section id="experience">
+            <h2>💼 Professional Experience</h2>
+            <div class="experience-item">
+                <h3>Mobile Application Developer</h3>
+                <p><em>CUNY Research Foundation | Sep 2023 - Aug 2024</em></p>
+                <ul>
+                    <li>Engineered high-performance backend services for an educational mobile app, implementing Redis caching and connection pooling to reduce API latency by 40%</li>
+                    <li>Architected and deployed scalable infrastructure using AWS Elastic Beanstalk auto-scaling, resulting in 20% reduction in system downtime</li>
+                    <li>Designed and optimized PostgreSQL database schema with strategic indexing, improving query performance by 35%</li>
+                    <li>Implemented automated CI/CD pipeline using Jenkins and Docker, reducing deployment time from 20 to 6 minutes</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>AI in Education Researcher (Internship)</h3>
+                <p><em>CUNY Research Foundation x NYC Department of Education | Jun 2023 - Aug 2023</em></p>
+                <ul>
+                    <li>Developed AI-powered educational platform using Python and TensorFlow, contributing to 15% improvement in student engagement retention</li>
+                    <li>Built real-time analytics dashboard using React and D3.js, enabling teachers to monitor and improve student progress effectively</li>
+                    <li>Led project updates and presentations to stakeholders, ensuring alignment with educational goals and technical requirements</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>CS Instructional Tutor</h3>
+                <p><em>James Madison High School | Dec 2021 - May 2022</em></p>
+                <ul>
+                    <li>Mentored 120+ students in programming classes, contributing to 20% increase in AP Computer Science exam pass rates</li>
+                    <li>Developed automated grading system in Python, reducing teacher workload by 15 hours per week</li>
+                </ul>
+            </div>
+        </section>
 
-    <section id="projects">
-        <h2>📂 Technical Projects</h2>
-        <div class="project-item">
-            <h3><a rel='noopener' href="https://github.com/Saad220905/StoneRidge" target="_blank">StoneRidge Banking Platform</a></h3>
-            <p><em>Feb 2024 - Present | Next.js, TypeScript, AWS, Plaid API</em></p>
-            <ul>
-                <li>Built a full-stack financial platform simulating secure transaction handling with AES-256 encryption</li>
-                <li>Streamlined user onboarding process using Plaid API, reducing onboarding time by 50% to maximize customer retention</li>
-                <li>Enhanced platform security by implementing role-based access control and authentication systems, ensuring FINRA compliance</li>
-            </ul>
-        </div>
-        <div class="project-item">
-            <h3><a rel='noopener' href="https://github.com/Saad220905/Clippr" target="_blank">Clippr Video Sharing App</a></h3>
-            <p><em>May 2024 - Present | React Native, Firebase, FFmpeg</em></p>
-            <ul>
-                <li>Developed a TikTok-style video-sharing platform supporting 100s of daily active users with feed loading times under a second</li>
-                <li>Implemented a video compression pipeline using FFmpeg, reducing upload sizes by 50% while maintaining video quality</li>
-                <li>Integrated a real-time chat system to enhance user interaction and engagement on the platform</li>
-            </ul>
-        </div>
-        <div class="project-item">
-            <h3><a rel='noopener' href="https://github.com/Saad220905/Memorize-App" target="_blank">Memorize! Cognitive Training Game</a></h3>
-            <p><em>Nov 2023 - Apr 2024 | SwiftUI, Core Data, AVFoundation</em></p>
-            <ul>
-                <li>Developed memory-enhancement Card Matching Game with Native iOS features and animations</li>
-                <li>Created an adaptive difficulty system to maximize user retention and engagement</li>
-            </ul>
-        </div>
-    </section>
+        <section id="projects">
+            <h2>📂 Technical Projects</h2>
+            <div class="project-item">
+                <h3><a rel='noopener' href="https://github.com/Saad220905/StoneRidge" target="_blank">StoneRidge Banking Platform</a></h3>
+                <p><em>Feb 2024 - Present | Next.js, TypeScript, AWS, Plaid API</em></p>
+                <ul>
+                    <li>Architected and developed a secure full-stack financial platform with AES-256 encryption for transaction handling</li>
+                    <li>Integrated Plaid API to streamline user onboarding, reducing process time by 50% and improving customer retention</li>
+                    <li>Implemented comprehensive security measures including role-based access control and authentication systems, ensuring FINRA compliance</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3><a rel='noopener' href="https://github.com/Saad220905/Clippr" target="_blank">Clippr Video Sharing App</a></h3>
+                <p><em>May 2024 - Present | React Native, Firebase, FFmpeg</em></p>
+                <ul>
+                    <li>Developed high-performance video-sharing platform supporting hundreds of daily active users with sub-second feed loading times</li>
+                    <li>Engineered efficient video compression pipeline using FFmpeg, reducing upload sizes by 50% while maintaining quality</li>
+                    <li>Implemented real-time chat system with Firebase, enhancing user engagement and platform interactivity</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3><a rel='noopener' href="https://github.com/Saad220905/Memorize-App" target="_blank">Memorize! Cognitive Training Game</a></h3>
+                <p><em>Nov 2023 - Apr 2024 | SwiftUI, Core Data, AVFoundation</em></p>
+                <ul>
+                    <li>Developed iOS memory-enhancement game with native features and smooth animations using SwiftUI</li>
+                    <li>Implemented adaptive difficulty system using Core Data, optimizing user engagement and retention</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div class="tab-content" id="bio">
+        <section class="bio-section">
+            <h2>👨‍💻 My Journey</h2>
+            <div class="bio-content">
+                <div class="bio-card">
+                    <h3>Early Passion for Technology</h3>
+                    <p>My journey in technology began with a fascination for how things work. From tinkering with computers to building my first applications, I've always been driven by curiosity and the desire to create meaningful solutions.</p>
+                </div>
+                
+                <div class="bio-card">
+                    <h3>Academic Excellence</h3>
+                    <p>At Hunter College, I've pursued a rigorous curriculum in Computer Science with minors in Mathematics and Economics. My academic achievements include winning the 2023 Congressional App Challenge, where I developed an AI-powered educational platform.</p>
+                </div>
+                
+                <div class="bio-card">
+                    <h3>Professional Growth</h3>
+                    <p>My experience at CUNY Research Foundation has been transformative. Working on educational technology and AI research has given me valuable insights into real-world software development and the impact of technology on education.</p>
+                </div>
+                
+                <div class="bio-card">
+                    <h3>Future Aspirations</h3>
+                    <p>I'm passionate about leveraging technology to solve complex problems. My goal is to contribute to innovative projects that make a difference, whether in AI research, software development, or educational technology.</p>
+                </div>
+            </div>
+        </section>
+    </div>
 </main>
+
 <footer>
     <div class="contact-links">
         <a href="mailto:saad220905@gmail.com">Contact</a>
