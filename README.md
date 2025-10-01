@@ -57,23 +57,8 @@ My experience spans **backend engineering, data pipelines, and mobile app develo
 ## 📬 Contact
 Feel free to reach out if you'd like to collaborate or discuss opportunities:  
 
-- **Email:** [saadk1924@outlook.com](mailto:saadk1924@outlook.com)  
-- **LinkedIn:** [linkedin.com/in/saad220905](https://linkedin.com/in/saad220905)  
-- **GitHub:** [github.com/Saad220905](https://github.com/Saad220905)  
-- **LeetCode:** [leetcode.com/u/saad220905/](https://leetcode.com/u/saad220905/)
 
----
 
 ## ⚡ Tech Stack
-- **Frontend:** HTML, TailwindCSS  
-- **Backend & DevOps:** Node.js, AWS, Docker, Jenkins  
-- **Databases:** PostgreSQL, MySQL, MongoDB, Redis, GraphQL  
-
----
-
-## 📄 Resume
-Download my resume [here](./resume.pdf).
-
----
 
 *© 2025 Saad Kashif. Built with ❤️ using TailwindCSS.*
